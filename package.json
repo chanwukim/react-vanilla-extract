@@ -1,0 +1,41 @@
+{
+  "name": "react-vanilla-extract",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --cache --write ."
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.14.2",
+    "@vanilla-extract/sprinkles": "^1.6.1",
+    "next": "14.2.2",
+    "next-themes": "^0.3.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vanilla-extract/next-plugin": "^2.4.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "semi": true,
+    "useTabs": false,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "printWidth": 100,
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "endOfLine": "auto"
+  }
+}
