@@ -4,9 +4,9 @@ import { ClassValue } from "clsx";
 import { Sprinkles } from "../styles/sprinkles.css";
 import { atoms } from "../styles/atom";
 
-type PolymorphicRef<E extends React.ElementType> = React.ComponentPropsWithRef<E>["ref"];
+export type PolymorphicRef<E extends React.ElementType> = React.ComponentPropsWithRef<E>["ref"];
 
-type Props<E extends React.ElementType> = {
+export type BoxProps<E extends React.ElementType> = {
   as?: E;
   className?: ClassValue;
   children?: React.ReactNode;
@@ -14,11 +14,11 @@ type Props<E extends React.ElementType> = {
   Sprinkles;
 
 type BoxComponent = <E extends React.ElementType>(
-  props: Props<E> & { ref: PolymorphicRef<E> },
+  props: BoxProps<E> & { ref?: PolymorphicRef<E> },
 ) => React.ReactNode;
 
 const Box: BoxComponent = React.forwardRef(function Box<E extends React.ElementType = "div">(
-  props: Props<E>,
+  props: BoxProps<E>,
   ref: PolymorphicRef<E>,
 ) {
   const {
