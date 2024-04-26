@@ -16,11 +16,6 @@ globalStyle("html, body", {
   backgroundColor: vars.theme["background-primary"],
 });
 
-globalStyle(`*:where(:not(canvas, iframe, img, svg, svg *, symbol *, video))`, {
-  all: "unset",
-  display: "revert",
-});
-
 globalStyle("*, *::before, *::after", {
   boxSizing: "border-box",
   WebkitFontSmoothing: "antialiased",
@@ -44,6 +39,8 @@ globalStyle("ul, ol, menu", {
 
 globalStyle("a", {
   cursor: "pointer",
+  textDecoration: "none",
+  color: "unset",
 });
 
 globalStyle("button", {
