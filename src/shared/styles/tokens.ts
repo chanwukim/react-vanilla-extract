@@ -170,21 +170,21 @@ export const breakpoints = {
 
 export const borderRadius = {
   none: "0",
-  xs: "2",
-  sm: "4",
-  md: "8",
-  lg: "12",
-  xl: "16",
-  full: "9999",
+  xs: "2px",
+  sm: "4px",
+  md: "8px",
+  lg: "12px",
+  xl: "16px",
+  full: "9999px",
 };
 
 export const borderWidths = {
   none: "0",
-  xs: "1",
-  sm: "2",
-  md: "4",
-  lg: "5",
-  xl: "6",
+  xs: "1px",
+  sm: "2px",
+  md: "4px",
+  lg: "5px",
+  xl: "6px",
 };
 
 export const fontFamily = {
@@ -193,12 +193,12 @@ export const fontFamily = {
 };
 
 export const fontSizes = {
-  xxs: "10",
-  xs: "12",
-  sm: "14",
-  md: "16",
-  lg: "18",
-  xl: "20",
+  xxs: "10px",
+  xs: "12px",
+  sm: "14px",
+  md: "16px",
+  lg: "18px",
+  xl: "20px",
 };
 
 export const fontWeights = {
@@ -209,13 +209,54 @@ export const fontWeights = {
   bold: "800",
 };
 
-export const spacing = {
+export const space = {
   none: "0",
-  xxs: "2",
-  xs: "4",
-  sm: "8",
-  md: "10",
-  lg: "14",
+  xxs: "2px",
+  xs: "4px",
+  sm: "8px",
+  md: "10px",
+  lg: "14px",
+  auto: "auto",
+  "0": "0",
+  "0.5": "2px",
+  "1": "4px",
+  "1.5": "6px",
+  "2": "8px",
+  "2.5": "10px",
+  "3": "12px",
+  "3.5": "14px",
+  "4": "16px",
+  "5": "20px",
+  "6": "24px",
+  "7": "28px",
+  "8": "32px",
+  "9": "36px",
+  "10": "40px",
+  "11": "44px",
+  "12": "48px",
+  "14": "56px",
+  "16": "64px",
+  "20": "80px",
+  "24": "96px",
+  "28": "112px",
+  "32": "128px",
+  "36": "144px",
+  "40": "160px",
+  "44": "176px",
+  "48": "192px",
+  "52": "208px",
+  "56": "224px",
+  "60": "240px",
+  "64": "256px",
+  "72": "288px",
+  "80": "320px",
+  "96": "384px",
+};
+
+export const opacity = {
+  "85": "0.85",
+  "70": "0.7",
+  "30": "0.3",
 };
 
 const tokens = {
@@ -226,7 +267,8 @@ const tokens = {
   fontFamily,
   fontSizes,
   fontWeights,
-  spacing,
+  space,
+  opacity,
 };
 
 export default tokens;
